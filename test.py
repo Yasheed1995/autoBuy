@@ -87,12 +87,15 @@ def check_items_quantity(item_to_buy, url):
 				if (i,j) in item_to_buy:
 					if(item_to_buy[(i,j)] > 0):
 						print((i,j))
-						print("quantity: ", item_to_buy[(i,j)])
+						print("quantity to buy: ", item_to_buy[(i,j)])
 						button = items[j].find_elements_by_tag_name("button")
 						if(button[1].text != "入荷お知らせメール"):
-							button[1].click()
-							item_cnt += 1
-							item_to_buy[(i,j)] -= 1
+							try:
+								button[1].click()
+								item_cnt += 1
+								item_to_buy[(i,j)] -= 1
+							except selenium.common.exceptions.ElementNotInteractableException: 
+								print('element not exist!')
 #		productButton = driver.find_elements_by_class_name("fs-c-button--addToCart--variation")
 		print("There are " + str(item_cnt) + " items you can buy!")
 		print('---%s seconds ---' % (time.time() - start_time))
@@ -187,13 +190,18 @@ def main(idx=0, restart=False):
 			time.sleep(5)
 			driver.refresh()
 			item_quantity = check_items_quantity(item_to_buy, url)
-			print("quantity: ", item_quantity)
+			print("current quantity: ", item_quantity)
 			
 		if item_quantity:
-			finish_buy(False) 
+			print ('real buy: ', sys.argv[2])
+			finish_buy(sys.argv[2]) 
 			clear_cart() 
 			
 if __name__ == '__main__':
+	if (len(sys.argv) < 3):
+		print ('wrong number of argv!')
+		driver.close()
+		exit(-1)
 	idx = int(sys.argv[1])
 	print('idx is: ', idx)
 	main(idx=idx, restart=False)
