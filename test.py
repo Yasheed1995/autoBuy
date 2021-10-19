@@ -110,18 +110,22 @@ def finish_buy(confirm):
 	start_time = time.time()
 	finish_flag = False
 	print("go to cart!")
+	cnt = 0
 	while not finish_flag:
 		driver.get(cart_url)
 		print("purchase!")
 		purchaseButton = driver.find_elements_by_class_name("fs-c-button--purchaseHere")
 		print(len(purchaseButton))
+		
 		try:
 			purchaseButton[0].click()
 			print('finish!')
 			finish_flag = True
 		except IndexError:
-			cnt = 0
+			
 			print('no purchase button! close toast!')
+			if cnt > 5:
+				return False
 			closeButton = driver.find_elements_by_class_name('iziToast-close')
 			try:
 				for i in closeButton:
@@ -130,8 +134,7 @@ def finish_buy(confirm):
 					
 			except selenium.common.exceptions.StaleElementReferenceException:
 				break
-			if cnt > 10:
-				return False
+			
 			
 	try:
 		Cash_on_delivery_button = driver.find_element_by_xpath(("//label[@for='fs_input_payment_cashOnDelivery']"));
