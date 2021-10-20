@@ -9,32 +9,32 @@ from selenium.common.exceptions import ElementNotInteractableException as Elemen
 import threading
 import sys
 # define driver
-#chromedriver = '/usr/local/bin/chromedriver'
-chromedriver = '/opt/homebrew/bin/chromedriver'
+chromedriver = '/usr/local/bin/chromedriver'
+#chromedriver = '/opt/homebrew/bin/chromedriver'
 driver = webdriver.Chrome(chromedriver)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 
 options = [
-	{
-		'url': 'https://store.isseymiyake.com/c/ha_all_all/HA15JT111', 
-		'item_to_buy': {
-			(0,0): 1,
-			(1,0): 1
-		},
-		'account':'www777.hung@gmail.com',
-		'password':'777seven',
-		'description': 'testing'
-	},
-	{
-		'url': 'https://store.isseymiyake.com/c/la_all_all/LA13FC185',
-		'item_to_buy': {
-			(0, 1): 1,
-			(1, 1): 2
-		},
-		'account':'qwerty8608301@gmail.com',
-		'password':'9FMp3.!.2mE6e6u',
-		'description': 'testing'
-	},
+	# {
+	# 	'url': 'https://store.isseymiyake.com/c/ha_all_all/HA15JT111', 
+	# 	'item_to_buy': {
+	# 		(0,0): 1,
+	# 		(1,0): 1
+	# 	},
+	# 	'account':'www777.hung@gmail.com',
+	# 	'password':'777seven',
+	# 	'description': 'testing'
+	# },
+	# {
+	# 	'url': 'https://store.isseymiyake.com/c/la_all_all/LA13FC185',
+	# 	'item_to_buy': {
+	# 		(0, 1): 1,
+	# 		(1, 1): 2
+	# 	},
+	# 	'account':'qwerty8608301@gmail.com',
+	# 	'password':'9FMp3.!.2mE6e6u',
+	# 	'description': 'testing'
+	# },
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH157',
 		'item_to_buy': {
@@ -246,15 +246,21 @@ def main(idx=0, restart=False):
 			print ('real buy: ', sys.argv[2])
 			finish_buy(sys.argv[2]) 
 			clear_cart() 
+		driver.quit()
 			
 if __name__ == '__main__':
 	if (len(sys.argv) < 3):
 		print ('wrong number of argv!')
-		driver.close()
+		driver.quit()
 		exit(-1)
 	idx = int(sys.argv[1])
 	print('idx is: ', idx)
-	main(idx=idx, restart=False)
-	while True:
-		pass
+	try:
+		main(idx=idx, restart=False)
+	except selenium.common.exceptions.NoSuchWindowException:
+		print('bye!')
+		driver.quit()
+		exit(-1)
+	# while True:
+	# 	pass
 	
