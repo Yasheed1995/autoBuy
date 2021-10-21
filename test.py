@@ -9,8 +9,8 @@ from selenium.common.exceptions import ElementNotInteractableException as Elemen
 import threading
 import sys
 # define driver
-chromedriver = '/usr/local/bin/chromedriver'
-#chromedriver = '/opt/homebrew/bin/chromedriver'
+#chromedriver = '/usr/local/bin/chromedriver'
+chromedriver = '/opt/homebrew/bin/chromedriver'
 driver = webdriver.Chrome(chromedriver)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 
