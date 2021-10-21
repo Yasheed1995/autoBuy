@@ -38,9 +38,12 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH157',
 		'item_to_buy': {
-			(0, 1): 4,
-			(0, 2): 4,
-			(0, 3): 2
+			(0, 1): 1,
+			(0, 2): 2,
+			(0, 3): 2,
+
+			(4, 1): 1
+
 		},
 		'account': 'www111.hung@gmail.com',
 		'password': '777seven',
@@ -171,6 +174,7 @@ def finish_buy(confirm):
 		except IndexError:
 			
 			print('no purchase button! close toast!')
+			return False
 			if cnt > 5:
 				return False
 			closeButton = driver.find_elements_by_class_name('iziToast-close')
