@@ -49,15 +49,15 @@ options = [
 		'password': '777seven',
 		'description': '1'
 	},
-	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JC152',
-		'item_to_buy': {
-			(0, 0): 1
-		},
-		'account': 'www222.hung@gmail.com',
-		'password': '777seven',
-		'description': '2'
-	},
+	# {
+	# 	'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JC152',
+	# 	'item_to_buy': {
+	# 		(0, 0): 1
+	# 	},
+	# 	'account': 'www222.hung@gmail.com',
+	# 	'password': '777seven',
+	# 	'description': '2'
+	# },
 	{
 		'url': 'https://store.isseymiyake.com/c/at_all_all/AT13FD221',
 		'item_to_buy': {
@@ -65,7 +65,7 @@ options = [
 			(0, 1): 1,
 			(0, 2): 1
 		},
-		'account': 'www333.hung@gmail.com',
+		'account': 'www222.hung@gmail.com',
 		'password': '777seven',
 		'description': '3'
 	},
@@ -76,7 +76,7 @@ options = [
 			(0, 1): 4,
 			(0, 2): 1
 		},
-		'account': 'www444.hung@gmail.com',
+		'account': 'www333.hung@gmail.com',
 		'password': '777seven',
 		'description': '4'
 	},
@@ -87,7 +87,7 @@ options = [
 			(0, 1): 7,
 			(0, 2): 1
 		},
-		'account': 'www555.hung@gmail.com',
+		'account': 'www444.hung@gmail.com',
 		'password': '777seven',
 		'description': '5'
 	},
@@ -101,9 +101,52 @@ options = [
 			(1, 1): 13,
 			(1, 3): 2
 		},
-		'account': 'www666.hung@gmail.com',
+		'account': 'www555.hung@gmail.com',
 		'password': '777seven',
 		'description': '6'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH244',
+		'item_to_buy': {
+			(0, 1): 2,
+			(1, 1): 3,
+			(2, 1): 2
+
+		},
+		'account': 'www666.hung@gmail.com',
+		'password': '777seven',
+		'description': '7'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK541',
+		'item_to_buy': {
+			(0, 0): 6,
+			(1, 0): 1,
+			(2, 0): 3
+		},
+		'account': 'www777.hung@gmail.com',
+		'password': '777seven',
+		'description': '8'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JO242',
+		'item_to_buy': {
+			(0, 0): 3,
+			(1, 0): 3,
+			(2, 0): 1
+		},
+		'account': 'www888.hung@gmail.com',
+		'password': '777seven',
+		'description': '9'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13KK711',
+		'item_to_buy': {
+			(0, 0): 2,
+		},
+		'account': 'www999.hung@gmail.com',
+		'password': '777seven',
+		'description': '10'
 	},
 ]
 
