@@ -133,7 +133,6 @@ options = [
 		'item_to_buy': {
 			(0, 0): 3,
 			(1, 0): 3,
-			(2, 0): 1
 		},
 		'account': 'www888.hung@gmail.com',
 		'password': '777seven',
@@ -147,6 +146,17 @@ options = [
 		'account': 'www999.hung@gmail.com',
 		'password': '777seven',
 		'description': '10'
+	},
+	{
+	'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13KK711',
+	'item_to_buy': {
+		(0, 0): 2,
+		(0, 1): 1,
+		(2, 1): 1
+	},
+	'account': 'www1111.hung@gmail.com',
+	'password': '777seven',
+	'description': '11'
 	},
 ]
 

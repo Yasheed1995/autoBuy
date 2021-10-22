@@ -9,3 +9,4 @@ python3 test.py 6 1 &
 python3 test.py 7 1 &
 python3 test.py 8 1 &
 python3 test.py 9 1 &
+python3 test.py 10 1 &
