@@ -108,8 +108,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH244',
 		'item_to_buy': {
-			(0, 1): 2,
-			(1, 1): 3,
+			# (0, 1): 2,
+			(1, 1): 1,
 			(2, 1): 2
 
 		},
