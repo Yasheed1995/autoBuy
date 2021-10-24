@@ -9,8 +9,8 @@ from selenium.common.exceptions import ElementNotInteractableException as Elemen
 import threading
 import sys
 # define driver
-#chromedriver = '/usr/local/bin/chromedriver'
-chromedriver = '/opt/homebrew/bin/chromedriver'
+chromedriver = '/usr/local/bin/chromedriver'
+#chromedriver = '/opt/homebrew/bin/chromedriver'
 driver = webdriver.Chrome(chromedriver)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 
@@ -192,13 +192,17 @@ def check_items_quantity(item_to_buy, url):
 						print((i,j))
 						print("quantity to buy: ", item_to_buy[(i,j)])
 						button = items[j].find_elements_by_tag_name("button")
-						if(button[1].text != "入荷お知らせメール"):
-							try:
-								button[1].click()
-								item_cnt += 1
-								item_to_buy[(i,j)] -= 1
-							except selenium.common.exceptions.ElementNotInteractableException: 
-								print('element not exist!')
+						#if(button[1].text != "入荷お知らせメール"):
+						for k in range(len(button)):
+							if button[k].text == 'カートに入れる':
+								try:
+									print('button text: ', button[k].text)
+									print('click button!')
+									button[k].click()
+									item_cnt += 1
+									item_to_buy[(i,j)] -= 1
+								except selenium.common.exceptions.ElementNotInteractableException: 
+									print('element not exist!')
 #		productButton = driver.find_elements_by_class_name("fs-c-button--addToCart--variation")
 		print("There are " + str(item_cnt) + " items you can buy!")
 		print('---%s seconds ---' % (time.time() - start_time))
@@ -227,7 +231,7 @@ def finish_buy(confirm):
 		except IndexError:
 			
 			print('no purchase button! close toast!')
-			return False
+			# return False
 			if cnt > 5:
 				return False
 			closeButton = driver.find_elements_by_class_name('iziToast-close')
@@ -237,6 +241,7 @@ def finish_buy(confirm):
 					cnt += 1
 					
 			except selenium.common.exceptions.StaleElementReferenceException:
+				print('stale element!')
 				break
 			
 			
@@ -276,6 +281,7 @@ def clear_cart():
 	print('---%s seconds ---' % (time.time() - start_time))
 	
 def main(idx=0, restart=False):	
+	driver.maximize_window()
 	url = options[idx]['url']
 	item_to_buy = options[idx]['item_to_buy']
 	account = options[idx]['account']
@@ -306,6 +312,7 @@ def main(idx=0, restart=False):
 		driver.quit()
 			
 if __name__ == '__main__':
+
 	if (len(sys.argv) < 3):
 		print ('wrong number of argv!')
 		driver.quit()
