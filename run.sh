@@ -10,7 +10,7 @@
 # python3 test.py 8 1 &
 # python3 test.py 9 1 &
 # python3 test.py 10 1 &
-for i in {0..19}
+for i in {0..18}
 do
     echo "running $i item!"
     python3 test.py $i 1 &
