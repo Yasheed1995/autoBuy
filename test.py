@@ -13,12 +13,13 @@ chromedriver = '/usr/local/bin/chromedriver'
 #chromedriver = '/opt/homebrew/bin/chromedriver'
 driver = webdriver.Chrome(chromedriver)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
+sleep_sec = 1
 
 options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/ha_all_all/HA15JT111', 
 		'item_to_buy': {
-			(0,1): 1,
+			(0,1): 2,
 			(1,0): 1
 		},
 		'account':'www777.hung@gmail.com',
@@ -111,19 +112,29 @@ def finish_buy(confirm):
 				print('stale element!')
 				break
 			
-			
-	try:
-		Cash_on_delivery_button = driver.find_element_by_xpath(("//label[@for='fs_input_payment_cashOnDelivery']"));
-		print(Cash_on_delivery_button)
-		Cash_on_delivery_button.click()
-	except selenium.common.exceptions.NoSuchElementException:
-		print("no button!")
+	time.sleep(1)
+	i = 10
+	while i > 0:	
+		i = i - 1	
+		try:
+			Cash_on_delivery_button = driver.find_element_by_xpath(("//label[@for='fs_input_payment_cashOnDelivery']"));
+			print(Cash_on_delivery_button)
+			Cash_on_delivery_button.click()
+
+			break
+		except selenium.common.exceptions.NoSuchElementException:
+			print("no cash on delivery button!")
 		
-	print('confirm button!')
-	confirmButton = driver.find_elements_by_class_name("fs-c-button--confirmOrder")
+	print('confirm : ', confirm)
 	if confirm:
-		confirmButton[0].click()
+		print('confirm!')
+		confirmButton = driver.find_elements_by_class_name("fs-c-button--confirmOrder")
+		print(confirmButton)
+		# confirmButton[0].click()
+		return True
+	
 	print('---%s seconds ---' % (time.time() - start_time))
+	return False
 	
 def clear_cart():
 	start_time = time.time()
@@ -166,17 +177,19 @@ def main(idx=0, restart=False):
 		item_quantity = check_items_quantity(item_to_buy, url)
 		print("quantity: ", item_quantity)
 		while item_quantity == 0:
-			print("No product to buy! sleep 10 secs")
-			time.sleep(5)
+			print("No product to buy! sleep " + str(sleep_sec) + " secs")
+			time.sleep(sleep_sec)
 			driver.refresh()
 			item_quantity = check_items_quantity(item_to_buy, url)
 			print("current quantity: ", item_quantity)
 			
 		if item_quantity:
 			print ('real buy: ', sys.argv[2])
-			finish_buy(sys.argv[2]) 
-			clear_cart() 
-		driver.quit()
+			if not finish_buy(int(sys.argv[2])):
+				# time.sleep(1)
+				clear_cart() 
+
+		# driver.quit()
 			
 if __name__ == '__main__':
 
