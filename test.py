@@ -17,10 +17,73 @@ sleep_sec = 1
 
 options = [
 	{
-		'url': 'https://store.isseymiyake.com/c/ha_all_all/HA15JT111', 
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JK662', 
 		'item_to_buy': {
-			(0,1): 2,
-			(1,0): 1
+			(0, 0): 13, # No. 22 SIZE 3
+			(0, 0): 18  # No. 72 SIZE 3
+		},
+		'account':'www111.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JT663', 
+		'item_to_buy': {
+			(0, 0): 10, # No. 22 SIZE 3
+			(0, 0): 5  # No. 72 SIZE 3
+		},
+		'account':'www222.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JF665', 
+		'item_to_buy': {
+			(0, 0): 12  # No. 72 SIZE 3
+		},
+		'account':'www333.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JK661', 
+		'item_to_buy': {
+			(0, 0): 5, # No. 22 SIZE 3
+			(0, 0): 5  # No. 72 SIZE 3
+		},
+		'account':'www444.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JF552', 
+		'item_to_buy': {
+			(0, 0): 1, # No. 22 SIZE 2
+			(0, 0): 3  # No. 22 SIZE 3
+		},
+		'account':'www555.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JH553', 
+		'item_to_buy': {
+			(0, 0): 1,  # No. 12 SIZE 3
+			(0, 0): 4,  # No. 22 SIZE 3
+			(0, 0): 1   # No. 52 SIZE 3
+		},
+		'account':'www666.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JH166', 
+		'item_to_buy': {
+			(0, 0): 1,  # No. 70 SIZE 2
+			(0, 0): 3,  # No. 70 SIZE 3
+			(0, 0): 2,  # No. 70 SIZE 5
+			(0, 0): 1,  # No. 81 SIZE 2
+			(0, 0): 1,  # No. 81 SIZE 5
 		},
 		'account':'www777.hung@gmail.com',
 		'password':'777seven',
@@ -99,14 +162,16 @@ def finish_buy(confirm):
 		except IndexError:
 			
 			print('no purchase button! close toast!')
+			print(cnt)
 			# return False
 			if cnt > 5:
 				return False
 			closeButton = driver.find_elements_by_class_name('iziToast-close')
 			try:
+				cnt += 1
 				for i in closeButton:
 					i.click()
-					cnt += 1
+					
 					
 			except selenium.common.exceptions.StaleElementReferenceException:
 				print('stale element!')
@@ -127,11 +192,19 @@ def finish_buy(confirm):
 		
 	print('confirm : ', confirm)
 	if confirm:
-		print('confirm!')
-		confirmButton = driver.find_elements_by_class_name("fs-c-button--confirmOrder")
-		print(confirmButton)
-		# confirmButton[0].click()
-		return True
+		for i in range(10):
+			
+			try:
+				print('confirm!')
+				confirmButton = driver.find_elements_by_class_name("fs-c-button--confirmOrder")
+				time.sleep(1)
+
+				print(confirmButton[0].text)
+				confirmButton[0].click()
+				time.sleep(2)
+				return True
+			except selenium.common.exceptions.StaleElementReferenceException:
+				print('stale element! try again!')
 	
 	print('---%s seconds ---' % (time.time() - start_time))
 	return False
@@ -177,11 +250,16 @@ def main(idx=0, restart=False):
 		item_quantity = check_items_quantity(item_to_buy, url)
 		print("quantity: ", item_quantity)
 		while item_quantity == 0:
+			item_need_to_buy_count = sum(item_to_buy.values())
 			print("No product to buy! sleep " + str(sleep_sec) + " secs")
 			time.sleep(sleep_sec)
 			driver.refresh()
 			item_quantity = check_items_quantity(item_to_buy, url)
 			print("current quantity: ", item_quantity)
+			if item_need_to_buy_count == 0:
+				print('bye!')
+				driver.quit()
+				exit(-1)
 			
 		if item_quantity:
 			print ('real buy: ', sys.argv[2])
