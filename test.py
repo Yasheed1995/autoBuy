@@ -17,7 +17,7 @@ sleep_sec = 1
 
 options = [
 	{
-		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JK662', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK662', 
 		'item_to_buy': {
 			(0, 0): 7, # No. 22 SIZE 3
 			(1, 0): 9  # No. 72 SIZE 3
