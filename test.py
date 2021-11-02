@@ -19,8 +19,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/il_all_all/PP13JK662', 
 		'item_to_buy': {
-			(0, 0): 13, # No. 22 SIZE 3
-			(1, 0): 18  # No. 72 SIZE 3
+			(0, 0): 7, # No. 22 SIZE 3
+			(1, 0): 9  # No. 72 SIZE 3
 		},
 		'account':'www111.hung@gmail.com',
 		'password':'777seven',
@@ -29,7 +29,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JT663', 
 		'item_to_buy': {
-			(0, 0): 10, # No. 22 SIZE 3
+			(0, 0): 12, # No. 22 SIZE 3
 			(1, 0): 5  # No. 72 SIZE 3
 		},
 		'account':'www222.hung@gmail.com',
@@ -39,56 +39,34 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF665', 
 		'item_to_buy': {
-			(1, 0): 12  # No. 72 SIZE 3
+			(1, 0): 14  # No. 72 SIZE 3
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
 		'description': 'testing'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK661', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13KK741', 
 		'item_to_buy': {
-			(0, 0): 5, # No. 22 SIZE 3
-			(1, 0): 5  # No. 72 SIZE 3
+			(1, 0): 4, # GRAISH BLUE （no.70）
 		},
 		'account':'www444.hung@gmail.com',
 		'password':'777seven',
 		'description': 'testing'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF552', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF664', 
 		'item_to_buy': {
-			(0, 0): 1, # No. 22 SIZE 2
-			(0, 0): 3  # No. 22 SIZE 3
+			(0, 0): 3, # No. 22 SIZE 2
+			(0, 2): 1, # No. 22 SIZE 4
+			(1, 0): 1, # No. 72 SIZE 2
+			(1, 1): 2, # No. 72 SIZE 3
 		},
 		'account':'www555.hung@gmail.com',
 		'password':'777seven',
 		'description': 'testing'
 	},
-	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH553', 
-		'item_to_buy': {
-			(0, 0): 1,  # No. 12 SIZE 3
-			(0, 0): 4,  # No. 22 SIZE 3
-			(0, 0): 1   # No. 52 SIZE 3
-		},
-		'account':'www666.hung@gmail.com',
-		'password':'777seven',
-		'description': 'testing'
-	},
-	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH166', 
-		'item_to_buy': {
-			(2, 0): 1,  # No. 70 SIZE 2
-			(2, 1): 3,  # No. 70 SIZE 3
-			(2, 3): 2,  # No. 70 SIZE 5
-			(4, 0): 1,  # No. 81 SIZE 2
-			(4, 3): 1,  # No. 81 SIZE 5
-		},
-		'account':'www777.hung@gmail.com',
-		'password':'777seven',
-		'description': 'testing'
-	},
+
 ]
 
 #login
