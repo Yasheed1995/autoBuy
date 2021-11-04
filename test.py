@@ -2,6 +2,7 @@
 
 import selenium
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import ActionChains
 import time
 from selenium.common.exceptions import NoSuchElementException as NoSuchElementException
@@ -11,7 +12,8 @@ import sys
 # define driver
 chromedriver = '/usr/local/bin/chromedriver'
 #chromedriver = '/opt/homebrew/bin/chromedriver'
-driver = webdriver.Chrome(chromedriver)
+#driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 1
 
