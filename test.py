@@ -57,12 +57,48 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF664', 
 		'item_to_buy': {
-			(0, 0): 3, # No. 22 SIZE 2
 			(0, 2): 1, # No. 22 SIZE 4
-			(1, 0): 1, # No. 72 SIZE 2
 			(1, 1): 2, # No. 72 SIZE 3
 		},
 		'account':'www555.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JG653', 
+		'item_to_buy': {
+			(0, 2): 3, # NO 32色   SIZE 3
+			(1, 1): 1, # NO 32色   SIZE 5
+			(0, 0): 2, # NO 62色   SIZE 2
+			(0, 0): 10, # NO 62色   SIZE 3
+			(0, 0): 2 # NO 62色   SIZE 5
+		},
+		'account':'www666.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK941', 
+		'item_to_buy': {
+			(0, 2): 20, # NO 40色   SIZE 3
+			(1, 1): 20, # NO 65色   SIZE 3
+			(0, 0): 20, # NO 72色   SIZE 3
+			(0, 0): 20, # NO 75色   SIZE 3
+		},
+		'account':'www777.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK942', 
+		'item_to_buy': {
+			(0, 2): 3, # NO 22色   SIZE 3
+			(1, 1): 1, # NO 40色   SIZE 3
+			(0, 0): 2, # NO 65色   SIZE 3
+			(0, 0): 10, # NO 72色   SIZE 3
+			(0, 0): 2 # NO 75色   SIZE 3
+		},
+		'account':'www888.hung@gmail.com',
 		'password':'777seven',
 		'description': 'testing'
 	},
