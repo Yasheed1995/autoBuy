@@ -21,8 +21,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK662', 
 		'item_to_buy': {
-			(0, 0): 7, # No. 22 SIZE 3
-			(1, 0): 9  # No. 72 SIZE 3
+			(0, 0): 10, # No. 22 SIZE 3
+			(1, 0): 10  # No. 72 SIZE 3
 		},
 		'account':'www111.hung@gmail.com',
 		'password':'777seven',
@@ -31,8 +31,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JT663', 
 		'item_to_buy': {
-			(0, 0): 12, # No. 22 SIZE 3
-			(1, 0): 5  # No. 72 SIZE 3
+			(0, 0): 15, # No. 22 SIZE 3
+			(1, 0): 8  # No. 72 SIZE 3
 		},
 		'account':'www222.hung@gmail.com',
 		'password':'777seven',
@@ -41,7 +41,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF665', 
 		'item_to_buy': {
-			(1, 0): 14  # No. 72 SIZE 3
+			(1, 0): 20  # No. 72 SIZE 3
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
@@ -50,7 +50,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13KK741', 
 		'item_to_buy': {
-			(1, 0): 4, # GRAISH BLUE （no.70）
+			(1, 0): 5, # GRAISH BLUE （no.70）
 		},
 		'account':'www444.hung@gmail.com',
 		'password':'777seven',
@@ -61,6 +61,7 @@ options = [
 		'item_to_buy': {
 			(0, 2): 1, # No. 22 SIZE 4
 			(1, 1): 2, # No. 72 SIZE 3
+			(1, 2): 1  # No. 72 SIZE 4
 		},
 		'account':'www555.hung@gmail.com',
 		'password':'777seven',
@@ -94,11 +95,11 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK942', 
 		'item_to_buy': {
-			(0, 0): 3, # NO 22色   SIZE 3
-			(1, 0): 1, # NO 40色   SIZE 3
-			(2, 0): 2, # NO 65色   SIZE 3
-			(3, 0): 10, # NO 72色   SIZE 3
-			(4, 0): 2 # NO 75色   SIZE 3
+			(0, 0): 20, # NO 22色   SIZE 3
+			(1, 0): 20, # NO 40色   SIZE 3
+			(2, 0): 20, # NO 65色   SIZE 3
+			(3, 0): 20, # NO 72色   SIZE 3
+			(4, 0): 20 # NO 75色   SIZE 3
 		},
 		'account':'www888.hung@gmail.com',
 		'password':'777seven',
