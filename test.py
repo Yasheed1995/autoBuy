@@ -81,14 +81,55 @@ options = [
 		'description': 'testing'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK941', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF165', 
 		'item_to_buy': {
-			(1, 0): 20, # NO 40色   SIZE 3
-			(2, 0): 20, # NO 65色   SIZE 3
-			(3, 0): 20, # NO 72色   SIZE 3
-			(4, 0): 20, # NO 75色   SIZE 3
+			(2, 1): 1, # NO 70色   SIZE 3
+			(2, 3): 1, # NO 70色   SIZE 5
+			(4, 0): 1, # NO 81色   SIZE 2
 		},
 		'account':'www777.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH166', 
+		'item_to_buy': {
+			(2, 3): 2, # NO 70色   SIZE 5
+			(4, 2): 1, # NO 81色   SIZE 4
+			(4, 3): 1, # NO 81色   SIZE 5
+		},
+		'account':'www888.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH573', 
+		'item_to_buy': {
+			(2, 1): 1, # NO 76色   SIZE 1
+			(2, 2): 3, # NO 76色   SIZE 3
+		},
+		'account':'www999.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JT162', 
+		'item_to_buy': {
+			(3, 0): 1, # NO 76色   SIZE 3
+			(4, 0): 2, # NO 81色   SIZE 3
+		},
+		'account':'www1111.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK161', 
+		'item_to_buy': {
+			(1, 1): 4, # NO 55色   SIZE 4
+			(2, 0): 3, # NO 70色   SIZE 3
+			(2, 1): 4, # NO 70色   SIZE 4
+		},
+		'account':'www2222.hung@gmail.com',
 		'password':'777seven',
 		'description': 'testing'
 	},
@@ -101,11 +142,22 @@ options = [
 			(3, 0): 20, # NO 72色   SIZE 3
 			(4, 0): 20 # NO 75色   SIZE 3
 		},
-		'account':'www888.hung@gmail.com',
+		'account':'www3333.hung@gmail.com',
 		'password':'777seven',
 		'description': 'testing'
 	},
-
+	{
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK941', 
+		'item_to_buy': {
+			(1, 0): 20, # NO 40色   SIZE 3
+			(2, 0): 20, # NO 65色   SIZE 3
+			(3, 0): 20, # NO 72色   SIZE 3
+			(4, 0): 20, # NO 75色   SIZE 3
+		},
+		'account':'www4444.hung@gmail.com',
+		'password':'777seven',
+		'description': 'testing'
+	},
 ]
 
 #login
