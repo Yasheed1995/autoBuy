@@ -85,7 +85,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF165', 
 		'item_to_buy': {
-			(2, 1): 1, # NO 70色   SIZE 3
+			(1, 1): 1, # NO 55色   SIZE 3
 			(2, 3): 1, # NO 70色   SIZE 5
 			(4, 0): 1, # NO 81色   SIZE 2
 		},
