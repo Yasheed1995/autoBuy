@@ -49,10 +49,11 @@ options = [
 		'description': 'testing'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13KK741', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK661', 
 		'item_to_buy': {
-			(1, 0): 5, # GRAISH BLUE （no.70）
-      (0, 0): 1 # NO 55色   SIZE 3
+			(0, 0): 2, # 22 size 3
+      (0, 0): 1, # 72, 3
+      (0, 1): 1 # 72, 4
 		},
 		'account':'www444.hung@gmail.com',
 		'password':'777seven',
