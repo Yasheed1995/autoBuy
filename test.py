@@ -10,10 +10,10 @@ from selenium.common.exceptions import ElementNotInteractableException as Elemen
 import threading
 import sys
 # define driver
-chromedriver = '/usr/local/bin/chromedriver'
-#chromedriver = '/opt/homebrew/bin/chromedriver'
-#driver = webdriver.Chrome(chromedriver)
-driver = webdriver.Chrome(ChromeDriverManager().install())
+#chromedriver = '/usr/local/bin/chromedriver'
+chromedriver = '/opt/homebrew/bin/chromedriver'
+driver = webdriver.Chrome(chromedriver)
+#driver = webdriver.Chrome(ChromeDriverManager().install())
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 1
 
@@ -41,7 +41,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF665', 
 		'item_to_buy': {
-			(1, 0): 20  # No. 72 SIZE 3
+			(1, 0): 20,  # No. 72 SIZE 3
+      (0, 0): 5, # No. 22 SIZE 3
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
@@ -51,6 +52,7 @@ options = [
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13KK741', 
 		'item_to_buy': {
 			(1, 0): 5, # GRAISH BLUE （no.70）
+      (0, 0): 1 # NO 55色   SIZE 3
 		},
 		'account':'www444.hung@gmail.com',
 		'password':'777seven',
@@ -94,8 +96,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH166', 
 		'item_to_buy': {
-			(2, 3): 2, # NO 70色   SIZE 5
-			(4, 2): 1, # NO 81色   SIZE 4
+			(3, 0): 2, # NO 76色   SIZE 2
 			(4, 3): 1, # NO 81色   SIZE 5
 		},
 		'account':'www888.hung@gmail.com',
