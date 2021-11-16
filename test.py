@@ -52,7 +52,7 @@ options = [
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK661', 
 		'item_to_buy': {
 			(0, 0): 2, # 22 size 3
-      (0, 0): 1, # 72, 3
+      (0, 0): 3, # 72, 3
       (0, 1): 1 # 72, 4
 		},
 		'account':'www444.hung@gmail.com',
@@ -117,7 +117,6 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JT162', 
 		'item_to_buy': {
-			(3, 0): 1, # NO 76色   SIZE 3
 			(4, 0): 2, # NO 81色   SIZE 3
 		},
 		'account':'www1111.hung@gmail.com',
@@ -127,9 +126,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK161', 
 		'item_to_buy': {
-			(1, 1): 4, # NO 55色   SIZE 4
-			(2, 0): 3, # NO 70色   SIZE 3
-			(2, 1): 4, # NO 70色   SIZE 4
+			(2, 0): 2, # NO 70色   SIZE 3
+			(2, 1): 1, # NO 70色   SIZE 4
 		},
 		'account':'www2222.hung@gmail.com',
 		'password':'777seven',
