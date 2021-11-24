@@ -134,7 +134,7 @@ options = [
 		'description': '2-5'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JF164', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF164', 
 		'item_to_buy': {
         (2, 2): 1, # 70 size 3
         (3, 2): 6, # 76 size 3
