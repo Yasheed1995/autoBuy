@@ -242,7 +242,7 @@ options = [
 		'url': 'https://store.isseymiyake.com/c/at_all_all/AT13FD221', 
 		'item_to_buy': {
         (0, 0): 1,
-        (1, 0): 1,
+        (1, 0): 0,
         (2, 0): 1
 		},
 		'account':'www3344.hung@gmail.com',
