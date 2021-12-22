@@ -20,49 +20,49 @@ sleep_sec = 1
 options = [
   # first
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK662', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK531', 
 		'item_to_buy': {
-			#(0, 0): 10, # No. 22 SIZE 3
-			#(1, 0): 10  # No. 72 SIZE 3
+			(0, 0): 10,
 		},
 		'account':'www111.hung@gmail.com',
 		'password':'777seven',
 		'description': '1-1'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JT663', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK531', 
 		'item_to_buy': {
-			#(0, 0): 8, # No. 22 SIZE 3
-			#(1, 0): 3  # No. 72 SIZE 3
+			(1, 0): 5,
+			(2, 0): 5,
 		},
 		'account':'www222.hung@gmail.com',
 		'password':'777seven',
 		'description': '1-2'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF665', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JO172', 
 		'item_to_buy': {
-			(1, 0): 12,  # No. 72 SIZE 3
+			(0, 0): 2,
+      (1, 0): 2,
+      (3, 0): 1, 
+      (4, 0): 1,
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
 		'description': '1-3'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK661', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF665', 
 		'item_to_buy': {
-			#(0, 0): 2, # 22 size 3
-      #(0, 0): 2, # 72, 3
-      #(0, 1): 2 # 72, 4
+        (1, 0): 8,
 		},
 		'account':'www444.hung@gmail.com',
 		'password':'777seven',
 		'description': '1-4'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF664', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JT663', 
 		'item_to_buy': {
-			#(0, 2): 1, # No. 22 SIZE 4
+        (0, 0): 6,
 		},
 		'account':'www555.hung@gmail.com',
 		'password':'777seven',
@@ -71,11 +71,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JG653', 
 		'item_to_buy': {
-			(0, 1): 3, # NO 32色   SIZE 3
-			(0, 3): 1, # NO 32色   SIZE 5
-			(1, 0): 2, # NO 62色   SIZE 2
-			(1, 1): 10, # NO 62色   SIZE 3
-			(1, 3): 2 # NO 62色   SIZE 5
+			(0, 1): 3,
+			(1, 1): 10, 
 		},
 		'account':'www666.hung@gmail.com',
 		'password':'777seven',
@@ -156,12 +153,12 @@ options = [
 		'description': '3-2'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JA173', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF174', 
 		'item_to_buy': {
-        (0, 0): 1,
-        (1, 1): 1,
-        (2, 0): 2,
-        (2, 2): 1,
+        (1, 0): 2,
+        (1, 1): 5,
+        (1, 2): 2,
+        (4, 1): 1,
 		},
 		'account':'www6666.hung@gmail.com',
 		'password':'777seven',
@@ -179,7 +176,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JG533', 
 		'item_to_buy': {
-        (0, 0): 5
+        (0, 0): 10
 		},
 		'account':'www8888.hung@gmail.com',
 		'password':'777seven',
@@ -198,11 +195,10 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK942', 
 		'item_to_buy': {
-        (0, 0): 10,
         (1, 0): 20,
-        (2, 0): 10,
-        (3, 0): 10,
-        (4, 0): 10,
+        (2, 0): 20,
+        (3, 0): 20,
+        (4, 0): 20,
 		},
 		'account':'www0000.hung@gmail.com',
 		'password':'777seven',
@@ -212,9 +208,9 @@ options = [
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK941', 
 		'item_to_buy': {
         (1, 0): 20,
-        (2, 0): 10,
-        (3, 0): 10,
-        (4, 0): 10
+        (2, 0): 20,
+        (3, 0): 20,
+        (4, 0): 20
 		},
 		'account':'www1122.hung@gmail.com',
 		'password':'777seven',
