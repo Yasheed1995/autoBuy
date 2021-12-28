@@ -144,7 +144,7 @@ options = [
 		'description': '3-1'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP11JK281', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JK281', 
 		'item_to_buy': {
         (1, 0): 20,
 		},
