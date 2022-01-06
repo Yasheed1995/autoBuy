@@ -132,9 +132,9 @@ options = [
 		'description': '2-4'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JF175', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JA114', 
 		'item_to_buy': {
-        (1, 1): 5,
+        (0, 0): 2,
 		},
 		'account':'www2222.hung@gmail.com',
 		'password':'777seven',
