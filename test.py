@@ -22,7 +22,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JC452', 
 		'item_to_buy': {
-			(2, 0): 3,
+			(2, 0): 4,
 		},
 		'account':'www111.hung@gmail.com',
 		'password':'777seven',
@@ -31,7 +31,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JG415', 
 		'item_to_buy': {
-			(4, 0): 7,
+			(4, 0): 6,
 		},
 		'account':'www222.hung@gmail.com',
 		'password':'777seven',
@@ -40,9 +40,9 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JK581', 
 		'item_to_buy': {
-      (0, 0): 3,
-      (1, 0): 3,
-      (2, 0): 3,
+      (0, 0): 4,
+      (1, 0): 4,
+      (2, 0): 1,
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
@@ -52,9 +52,9 @@ options = [
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JG415', 
 		'item_to_buy': {
         (0, 0): 3,
-        (1, 0): 2,
-        (3, 0): 2,
-        (4, 0): 2,
+        (1, 0): 3,
+        (3, 0): 3,
+        (4, 0): 3,
 		},
 		'account':'www444.hung@gmail.com',
 		'password':'777seven',
@@ -63,6 +63,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JF414', 
 		'item_to_buy': {
+        (0, 0): 2,
         (1, 0): 3,
         (4, 0): 1,
 		},
@@ -73,8 +74,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JF413', 
 		'item_to_buy': {
-			(0, 0): 2,
-			(3, 0): 1,
+			(0, 0): 1,
+			(1, 0): 1,
 		},
 		'account':'www666.hung@gmail.com',
 		'password':'777seven',
@@ -99,7 +100,7 @@ options = [
         (0, 0): 3,
         (0, 1): 2,
         (1, 2): 2,
-        (4, 1): 2,
+        (4, 1): 3,
         (4, 2): 2,
         (4, 0): 2,
 		},
@@ -113,6 +114,7 @@ options = [
         (1, 0): 1,
         (1, 3): 1,
         (2, 0): 1,
+        (0, 2): 1,
 		},
 		'account':'www999.hung@gmail.com',
 		'password':'777seven',
@@ -124,6 +126,7 @@ options = [
         (0, 0): 2,
         (1, 0): 2,
         (1, 1): 2,
+        (1, 2): 2,
         (3, 0): 2,
         (3, 2): 2,
 		},
@@ -189,16 +192,18 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH284', 
 		'item_to_buy': {
-        (0, 1): 10
+        (0, 1): 6
 		},
 		'account':'www8888.hung@gmail.com',
 		'password':'777seven',
 		'description': '3-5'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH284', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JO582', 
 		'item_to_buy': {
-        (1, 1): 10
+        (0, 0): 1,
+        (1, 0): 1,
+        (2, 0): 2,
 		},
 		'account':'www9999.hung@gmail.com',
 		'password':'777seven',
