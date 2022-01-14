@@ -2,6 +2,7 @@
 
 import selenium
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import ActionChains
 import time
@@ -11,8 +12,9 @@ import threading
 import sys
 # define driver
 #chromedriver = '/usr/local/bin/chromedriver'
-chromedriver = '/opt/homebrew/bin/chromedriver'
-driver = webdriver.Chrome(chromedriver)
+ser = Service('/opt/homebrew/bin/chromedriver')
+op = webdriver.ChromeOptions()
+driver = webdriver.Chrome(service=ser, options=op)
 #driver = webdriver.Chrome(ChromeDriverManager().install())
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 1
@@ -22,6 +24,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JC452', 
 		'item_to_buy': {
+			(0, 0): 4,
 			(2, 0): 4,
 		},
 		'account':'www111.hung@gmail.com',
@@ -40,11 +43,9 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JK581', 
 		'item_to_buy': {
-      (0, 0): 4,
-      (1, 0): 4,
+      (0, 0): 5,
+      (1, 0): 5,
       (2, 0): 1,
-      (0, 1): 1,
-      (1, 1): 1,
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
@@ -117,6 +118,7 @@ options = [
         (1, 3): 1,
         (2, 0): 1,
         (0, 2): 1,
+        (4, 1): 1,
 		},
 		'account':'www999.hung@gmail.com',
 		'password':'777seven',
@@ -137,9 +139,12 @@ options = [
 		'description': '2-4'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JA114', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JF583', 
 		'item_to_buy': {
-        (0, 0): 2,
+        (0, 0): 1,
+        (0, 1): 1,
+        (1, 0): 1,
+        (2, 1): 1,
 		},
 		'account':'www2222.hung@gmail.com',
 		'password':'777seven',
@@ -257,7 +262,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JF453', 
 		'item_to_buy': {
-        (0, 0): 1,
+        (0, 0): 2,
         (1, 0): 1,
         (1, 1): 2,
         (1, 2): 1,
