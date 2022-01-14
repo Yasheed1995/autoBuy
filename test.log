@@ -1,0 +1,29 @@
+idx is:  0
+try to login!
+click login button!
+---2.4331488609313965 seconds ---
+go to cart!
+clear cart start!
+clear Done!
+item need to buy count:  8
+item_to_buy:  {(0, 0): 4, (2, 0): 4}
+item name you're checking is:  GUSTY 
+product names are: 
+(0, 0)
+quantity to buy:  4
+(2, 0)
+quantity to buy:  4
+There are 0 items you can buy!
+---0.5799210071563721 seconds ---
+quantity:  0
+No product to buy! sleep 1 secs
+item name you're checking is:  GUSTY 
+product names are: 
+(0, 0)
+quantity to buy:  4
+(2, 0)
+quantity to buy:  4
+There are 0 items you can buy!
+---0.3659060001373291 seconds ---
+current quantity:  0
+No product to buy! sleep 1 secs

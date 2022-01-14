@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "test.py", line 484, in <module>
+    main(idx=idx, restart=False)
+  File "test.py", line 459, in main
+    driver.refresh()
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 1061, in refresh
+    self.execute(Command.REFRESH)
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 422, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 421, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/remote_connection.py", line 443, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Users/a777/Library/Python/3.8/lib/python/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
