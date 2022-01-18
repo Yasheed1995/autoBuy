@@ -206,8 +206,8 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH484', 
 		'item_to_buy': {
-        (0, 0): 1
-        (1, 0): 1
+        (0, 0): 1,
+        (1, 0): 1,
 		},
 		'account':'www8888.hung@gmail.com',
 		'password':'777seven',
