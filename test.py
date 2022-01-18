@@ -204,7 +204,7 @@ options = [
 		'description': '3-4'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JH484', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JH484', 
 		'item_to_buy': {
         (0, 0): 1,
         (1, 0): 1,
@@ -214,7 +214,7 @@ options = [
 		'description': '3-5'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP13JO582', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JO582', 
 		'item_to_buy': {
         (0, 0): 1,
         (1, 0): 1,
