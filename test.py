@@ -203,9 +203,11 @@ options = [
 		'description': '3-4'
 	},
 	{
-		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JH484', 
+		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JK361', 
 		'item_to_buy': {
-        (1, 0): 1,
+        (0, 0): 8,
+        (1, 0): 8,
+        (2, 0): 8,
 		},
 		'account':'www8888.hung@gmail.com',
 		'password':'777seven',
@@ -279,7 +281,7 @@ options = [
 	{
 		'url': 'https://store.isseymiyake.com/c/pl_all_all/PP21JK361', 
 		'item_to_buy': {
-        (2, 0): 15
+        (2, 0): 20,
 		},
 		'account':'www0101.hung@gmail.com',
 		'password':'777seven',
