@@ -23,27 +23,32 @@ sleep_sec = 1
 options = [
   # first
 	{
-		'url': '', 
+		'url': 'https://store.isseymiyake.com/c/at_all_all/AT21FD221', 
 		'item_to_buy': {
-			(0, 0): 3,
+			(0, 0): 1,
+			(1, 0): 1,
+			(2, 0): 3,
 		},
 		'account':'www111.hung@gmail.com',
 		'password':'777seven',
 		'description': '1-1'
 	},
 	{
-		'url': '', 
+		'url': 'https://store.isseymiyake.com/c/at_all_all/AT21FJ226', 
 		'item_to_buy': {
-			(4, 0): 6,
+			(0, 0): 2,
+			(1, 0): 2,
+			(2, 0): 4,
 		},
 		'account':'www222.hung@gmail.com',
 		'password':'777seven',
 		'description': '1-2'
 	},
 	{
-		'url': '', 
+		'url': 'https://store.isseymiyake.com/c/at_all_all/AT21FF237', 
 		'item_to_buy': {
-      (0, 0): 4,
+      (1, 0): 1,
+      (2, 0): 2,
 		},
 		'account':'www333.hung@gmail.com',
 		'password':'777seven',
