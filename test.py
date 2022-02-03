@@ -11,6 +11,10 @@ from selenium.common.exceptions import NoSuchElementException as NoSuchElementEx
 from selenium.common.exceptions import ElementNotInteractableException as ElementNotInteractableException
 import threading
 import sys
+
+import json
+
+from ast import literal_eval
 # define driver
 #chromedriver = '/usr/local/bin/chromedriver'
 ser = Service('/opt/homebrew/bin/chromedriver')
@@ -20,6 +24,8 @@ driver = webdriver.Chrome(service=ser, options=op)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 1
 
+
+'''
 options = [
   # first
 	{
@@ -259,6 +265,25 @@ options = [
 		'description': '4-6'
 	},
 ]
+'''
+
+def write_options():
+    with open ('options.json', 'w') as f:
+      for item in options:
+        item['item_to_buy'] = {str(k): v for k, v in item['item_to_buy'].items()}
+    json.dump(options, f)
+
+def read_options():
+    with open ('options.json', 'r') as f:
+      obj = json.load(f)
+
+    for item in obj:
+      item['item_to_buy'] = {literal_eval(k): v for k, v in item['item_to_buy'].items()}
+
+    return obj
+
+      
+
 
 #login
 def login(account, password):
@@ -413,6 +438,7 @@ def clear_cart():
 	
 def main(idx=0, restart=False):	
 	driver.maximize_window()
+	options = read_options()
 	url = options[idx]['url']
 	item_to_buy = options[idx]['item_to_buy']
 	account = options[idx]['account']
