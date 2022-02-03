@@ -439,6 +439,7 @@ def clear_cart():
 def main(idx=0, restart=False):	
 	driver.maximize_window()
 	options = read_options()
+	print(options)
 	url = options[idx]['url']
 	item_to_buy = options[idx]['item_to_buy']
 	account = options[idx]['account']
