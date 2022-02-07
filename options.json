@@ -5,7 +5,7 @@
     "item_to_buy" : {
       "(0, 0)" : 1,
       "(1, 0)" : 2,
-      "(2, 0)" : 2
+      "(2, 0)" : 5
     },
     "account" : "www111.hung@gmail.com",
     "password" : "777seven"
@@ -33,9 +33,9 @@
   },
   {
     "description" : "1-4",
-    "url" : "https://store.isseymiyake.com/c/at_all_all/AT21FD221",
+    "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21FO343",
     "item_to_buy" : {
-      "(2, 0)" : 3
+      "(1, 0)" : 4
     },
     "account" : "www444.hung@gmail.com",
     "password" : "777seven"
@@ -53,7 +53,7 @@
     "description" : "1-6",
     "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JK581",
     "item_to_buy" : {
-      "(0, 0)" : 4,
+      "(0, 0)" : 3,
       "(1, 0)" : 2,
       "(2, 0)" : 1
     },
@@ -62,11 +62,10 @@
   },
   {
     "description" : "2-1",
-    "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JO582",
+    "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JO512",
     "item_to_buy" : {
-      "(0, 0)" : 1,
-      "(1, 0)" : 1,
-      "(2, 0)" : 1
+      "(0, 0)" : 2,
+      "(2, 0)" : 2
     },
     "account" : "www777.hung@gmail.com",
     "password" : "777seven"
@@ -124,8 +123,9 @@
     "description" : "2-6",
     "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JF513",
     "item_to_buy" : {
-      "(0, 0)" : 4,
-      "(1, 0)" : 1
+      "(0, 0)" : 6,
+      "(1, 0)" : 2,
+      "(2, 0)" : 1
     },
     "account" : "www3333.hung@gmail.com",
     "password" : "777seven"
@@ -184,8 +184,8 @@
     "description" : "3-6",
     "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JK461",
     "item_to_buy" : {
-      "(0, 0)" : 3,
-      "(1, 0)" : 3
+      "(0, 0)" : 5,
+      "(1, 0)" : 5
     },
     "account" : "www9999.hung@gmail.com",
     "password" : "777seven"
