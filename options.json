@@ -156,8 +156,7 @@
     "description" : "3-3",
     "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JF462",
     "item_to_buy" : {
-      "(0, 0)" : 2,
-      "(1, 0)" : 2
+      "(0, 0)" : 2
     },
     "account" : "www6666.hung@gmail.com",
     "password" : "777seven"
@@ -184,8 +183,7 @@
     "description" : "3-6",
     "url" : "https://store.isseymiyake.com/c/pl_all_all/PP21JK461",
     "item_to_buy" : {
-      "(0, 0)" : 5,
-      "(1, 0)" : 5
+      "(1, 0)" : 10
     },
     "account" : "www9999.hung@gmail.com",
     "password" : "777seven"
