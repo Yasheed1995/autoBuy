@@ -22,7 +22,7 @@ op = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=ser, options=op)
 #driver = webdriver.Chrome(ChromeDriverManager().install())
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
-sleep_sec = 3
+sleep_sec = 4
 program_start_time = 0
 
 
