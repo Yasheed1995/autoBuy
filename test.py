@@ -16,11 +16,9 @@ import json
 
 from ast import literal_eval
 # define driver
-#chromedriver = '/usr/local/bin/chromedriver'
 ser = Service('/opt/homebrew/bin/chromedriver')
 op = webdriver.ChromeOptions()
 driver = webdriver.Chrome(service=ser, options=op)
-#driver = webdriver.Chrome(ChromeDriverManager().install())
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 4
 program_start_time = 0
@@ -46,13 +44,10 @@ def login(account, password):
 	start_time = time.time()
 	print("try to login!")
 	driver.get('https://store.isseymiyake.com/my/top')
-	#driver.find_element_by_name('mailAddress').send_keys(account)
 	driver.find_element(By.NAME, 'mailAddress').send_keys(account)
-	#driver.find_element_by_name('password').send_keys(password)
 	driver.find_element(By.NAME, 'password').send_keys(password)
 	print("click login button!")
 	try:
-		#loginButton = driver.find_elements_by_class_name("fs-c-button--login")
 		loginButton = driver.find_elements(By.CLASS_NAME, "fs-c-button--login")
 		loginButton[0].click()
 	except ElementNotInteractableException:
@@ -70,19 +65,15 @@ def check_items_quantity(item_to_buy, url):
 	print("product names are: ")
 	item_cnt = 0
 	try:
-		#html_list = driver.find_elements_by_class_name("fs-c-variationList__item__cart")
 		html_list = driver.find_elements(By.CLASS_NAME, "fs-c-variationList__item__cart")
 		for i in range(len(html_list)):
-			#items = html_list[i].find_elements_by_tag_name("li")
 			items = html_list[i].find_elements(By.TAG_NAME, "li")
 			for j in range(len(items)):
 				if (i,j) in item_to_buy:
 					if(item_to_buy[(i,j)] > 0):
 						print((i,j))
 						print("quantity to buy: ", item_to_buy[(i,j)])
-						#button = items[j].find_elements_by_tag_name("button")
 						button = items[j].find_elements(By.TAG_NAME, "button")
-						#if(button[1].text != "入荷お知らせメール"):
 						for k in range(len(button)):
 							if button[k].text == 'カートに入れる':
 								try:
@@ -93,7 +84,6 @@ def check_items_quantity(item_to_buy, url):
 									item_to_buy[(i,j)] -= 1
 								except selenium.common.exceptions.ElementNotInteractableException: 
 									print('element not exist!')
-#		productButton = driver.find_elements_by_class_name("fs-c-button--addToCart--variation")
 		print("There are " + str(item_cnt) + " items you can buy!")
 		print('---%s seconds ---' % (time.time() - start_time))
 		return item_cnt
@@ -111,7 +101,6 @@ def finish_buy(confirm):
 	while not finish_flag:
 		driver.get(cart_url)
 		print("purchase!")
-		#purchaseButton = driver.find_elements_by_class_name("fs-c-button--purchaseHere")
 		purchaseButton = driver.find_elements(By.CLASS_NAME, "fs-c-button--purchaseHere")
 		print(len(purchaseButton))
 		
@@ -126,7 +115,6 @@ def finish_buy(confirm):
 			# return False
 			if cnt > 5:
 				return False
-			#closeButton = driver.find_elements_by_class_name('iziToast-close')
 			closeButton = driver.find_elements(By.CLASS_NAME, 'iziToast-close')
 			try:
 				cnt += 1
@@ -143,7 +131,6 @@ def finish_buy(confirm):
 	while i > 0:	
 		i = i - 1	
 		try:
-			#Cash_on_delivery_button = driver.find_element_by_xpath(("//label[@for='fs_input_payment_cashOnDelivery']"));
 			Cash_on_delivery_button = driver.find_element(By.XPATH, ("//label[@for='fs_input_payment_cashOnDelivery']"));
 			print(Cash_on_delivery_button)
 			Cash_on_delivery_button.click()
@@ -158,7 +145,6 @@ def finish_buy(confirm):
 			
 			try:
 				print('confirm!')
-				#confirmButton = driver.find_elements_by_class_name("fs-c-button--confirmOrder")
 				confirmButton = driver.find_elements(By.CLASS_NAME, "fs-c-button--confirmOrder")
 				time.sleep(1)
 
@@ -179,7 +165,6 @@ def clear_cart():
 	print("clear cart start!")
 	clear_flag = False
 	while not clear_flag:
-		#clearButton = driver.find_elements_by_class_name("fs-c-button--cancel--cart")
 		clearButton = driver.find_elements(By.CLASS_NAME, "fs-c-button--cancel--cart")
 		if len(clearButton) == 0:
 			print("clear Done!")
@@ -230,7 +215,6 @@ def main(idx=0, restart=False):
 		if item_quantity:
 			print ('real buy: ', sys.argv[2])
 			if not finish_buy(int(sys.argv[2])):
-				# time.sleep(1)
 				clear_cart() 
 
 		# driver.quit()
