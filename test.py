@@ -23,7 +23,6 @@ cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 4
 program_start_time = 0
 
-
 def write_options():
     with open ('options.json', 'w') as f:
       for item in options:
@@ -181,13 +180,13 @@ def clear_cart():
 	print('---%s seconds ---' % (time.time() - start_time))
 	
 def main(idx=0, restart=False):	
-	driver.maximize_window()
+	#driver.maximize_window()
 	options = read_options()
 	print(options)
 	url = options[idx]['url']
 	item_to_buy = options[idx]['item_to_buy']
-	account = options[idx]['account']
-	password = options[idx]['password']
+	account = sys.argv[3]
+	password = '777seven'
 	if not restart:
 		login(account=account, password=password)
 		clear_cart()
