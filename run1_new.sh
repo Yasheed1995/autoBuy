@@ -11,4 +11,6 @@ python3 test.py 4 1 "www555.hung+jp@gmail.com" &
 sleep 0.9
 python3 test.py 5 1 "www666.hung+jp@gmail.com" &
 sleep 0.9
+python3 test.py 6 1 "www888.hung+jp@gmail.com" &
+sleep 0.9
 
