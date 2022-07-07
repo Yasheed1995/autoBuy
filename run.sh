@@ -8,8 +8,8 @@ do
 	then
 		echo 
 	else
-		echo "sh run${i}.sh"
-		nohup sh run${i}.sh &
+		echo "sh run${i}_new.sh"
+		nohup sh run${i}_new.sh &
 	fi
 done
 

@@ -15,9 +15,13 @@ import sys
 import json
 
 from ast import literal_eval
+import os
+print(os.path.expanduser('~'))
 # define driver
-ser = Service('/opt/homebrew/bin/chromedriver')
+#ser = Service('/opt/homebrew/bin/chromedriver')
+ser = Service(os.path.expanduser('~')+'/chromedriver')
 op = webdriver.ChromeOptions()
+op.binary_location = "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta"
 driver = webdriver.Chrome(service=ser, options=op)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
 sleep_sec = 4
