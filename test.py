@@ -22,9 +22,10 @@ print(os.path.expanduser('~'))
 ser = Service(os.path.expanduser('~')+'/chromedriver')
 op = webdriver.ChromeOptions()
 op.binary_location = "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta"
+#op.binary_location = "~/Chromium.app/Contents/MacOS/Chromium"
 driver = webdriver.Chrome(service=ser, options=op)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
-sleep_sec = 4
+sleep_sec = 10
 program_start_time = 0
 
 def write_options():
