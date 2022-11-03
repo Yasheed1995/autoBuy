@@ -21,7 +21,8 @@ print(os.path.expanduser('~'))
 #ser = Service('/opt/homebrew/bin/chromedriver')
 ser = Service(os.path.expanduser('~')+'/chromedriver')
 op = webdriver.ChromeOptions()
-op.binary_location = "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta"
+#op.binary_location = "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta"
+op.binary_location = "/Applications/Thorium.app/Contents/MacOS/Thorium"
 #op.binary_location = "~/Chromium.app/Contents/MacOS/Chromium"
 driver = webdriver.Chrome(service=ser, options=op)
 cart_url = "https://store.isseymiyake.com/p/cart?type=purchase"
