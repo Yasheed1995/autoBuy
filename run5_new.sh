@@ -9,8 +9,8 @@ python3 test.py 31 1 "www444.hung+abe@gmail.com" &
 sleep 5
 python3 test.py 32 1 "www555.hung+abe@gmail.com" &
 sleep 5
-python3 test.py 33 1 "www666.hung+abe@gmail.com" &
+#python3 test.py 33 1 "www666.hung+abe@gmail.com" &
 sleep 5
-python3 test.py 34 1 "www888.hung+abe@gmail.com" &
+#python3 test.py 34 1 "www888.hung+abe@gmail.com" &
 sleep 5
 
